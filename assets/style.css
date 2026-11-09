@@ -1106,3 +1106,193 @@ tr:last-child td {
         margin-left: auto;
     }
 }
+
+
+
+/* =========================================
+   PLM FIND - DARK MODE (FINAL)
+========================================= */
+
+html.theme-dark {
+    color-scheme: dark;
+
+    --canvas: #11151c;
+    --ink: #edf2f7;
+    --muted: #afbbca;
+    --line: #374253;
+    --maroon-soft: #392731;
+    --shadow: 0 12px 28px rgba(0,0,0,.22);
+}
+
+/* Main backgrounds */
+html.theme-dark body,
+html.theme-dark .app-layout,
+html.theme-dark .main-area,
+html.theme-dark .content,
+html.theme-dark .auth-layout,
+html.theme-dark .auth-main {
+    background: #11151c !important;
+    color: #edf2f7 !important;
+}
+
+/* Sidebar */
+html.theme-dark .sidebar {
+    background: #431923 !important;
+    color: #ffffff !important;
+    border-color: #69424c !important;
+}
+
+html.theme-dark .sidebar .brand,
+html.theme-dark .sidebar-bottom strong {
+    color: #ffffff !important;
+}
+
+html.theme-dark .sidebar .brand-mark {
+    background: #ffffff;
+    color: #721923;
+}
+
+html.theme-dark .sidebar-caption,
+html.theme-dark .sidebar-bottom small {
+    color: #dcc2c9 !important;
+}
+
+html.theme-dark .nav-links a {
+    color: #f2dfe4 !important;
+}
+
+html.theme-dark .nav-links a:hover,
+html.theme-dark .nav-links a.active {
+    background: #68303d !important;
+    color: #ffffff !important;
+}
+
+/* Top bar and panels */
+html.theme-dark .topbar,
+html.theme-dark .panel,
+html.theme-dark .stat-card:not(.highlight),
+html.theme-dark .item-card,
+html.theme-dark .report-card,
+html.theme-dark .notification-card,
+html.theme-dark .form-card,
+html.theme-dark .table-wrap,
+html.theme-dark .search-row,
+html.theme-dark .empty,
+html.theme-dark .simple-grid > * {
+    background: #1d2531 !important;
+    color: #edf2f7 !important;
+    border-color: #374253 !important;
+}
+
+/* Preserve highlighted stat cards */
+html.theme-dark .stat-card.highlight {
+    background: #721923;
+    border-color: #721923;
+}
+
+/* General text */
+html.theme-dark h1,
+html.theme-dark h2,
+html.theme-dark h3,
+html.theme-dark h4,
+html.theme-dark .page-heading p,
+html.theme-dark .stack-form label,
+html.theme-dark .item-content p,
+html.theme-dark .description,
+html.theme-dark .sidebar-bottom strong {
+    color: #edf2f7 !important;
+}
+
+html.theme-dark .muted,
+html.theme-dark .eyebrow:not(.light),
+html.theme-dark .topbar-kicker,
+html.theme-dark .stat-card small,
+html.theme-dark .stat-card span,
+html.theme-dark .field-hint {
+    color: #b5c1d0 !important;
+}
+
+html.theme-dark a:not(.primary-btn),
+html.theme-dark .text-button,
+html.theme-dark .item-bottom {
+    color: #f2abb6;
+}
+
+/* Forms and input fields */
+html.theme-dark input:not([type="checkbox"]):not([type="radio"]),
+html.theme-dark select,
+html.theme-dark textarea {
+    background: #283241 !important;
+    color: #ffffff !important;
+    border-color: #536174 !important;
+}
+
+html.theme-dark input::placeholder,
+html.theme-dark textarea::placeholder {
+    color: #aab6c7;
+}
+
+html.theme-dark .kind-toggle,
+html.theme-dark .help-strip,
+html.theme-dark .claim-explanation,
+html.theme-dark .user-chip,
+html.theme-dark .avatar {
+    background: #293342 !important;
+    color: #edf2f7 !important;
+}
+
+html.theme-dark .kind-toggle a.selected {
+    background: #374253 !important;
+    color: #ffffff !important;
+}
+
+/* Tables */
+html.theme-dark table,
+html.theme-dark th,
+html.theme-dark td {
+    background: #1d2531 !important;
+    color: #edf2f7 !important;
+    border-color: #374253 !important;
+}
+
+/* Other elements */
+html.theme-dark .item-photo,
+html.theme-dark .detail-photo {
+    background: #283241 !important;
+}
+
+html.theme-dark .outline-btn {
+    background: #283241 !important;
+    color: #f2abb6 !important;
+    border-color: #a65f6c !important;
+}
+
+html.theme-dark .app-footer {
+    color: #aab6c7 !important;
+}
+
+/* Dark Mode button */
+.plm-theme-toggle {
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    color: #721923;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.plm-theme-toggle:hover {
+    filter: brightness(.95);
+}
+
+.plm-theme-toggle:focus-visible {
+    outline: 3px solid #e8bb73;
+    outline-offset: 2px;
+}
+
+
