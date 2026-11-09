@@ -77,4 +77,58 @@ $viewNav = (string) (
 <?php endif; ?>
 
 </nav>
+
+
+<!-- PLM FIND DARK MODE BUTTON -->
+<button
+    type="button"
+    id="plmThemeToggle"
+    class="plm-theme-toggle"
+    style="display:block; width:90%; margin:15px auto;
+           padding:12px; border-radius:10px;
+           background:#ffffff; color:#721923;
+           border:1px solid #cccccc;
+           font-weight:bold; cursor:pointer;"
+>
+    ☾ Dark Mode
+</button>
+
+<script>
+(function () {
+    const button = document.getElementById("plmThemeToggle");
+    const root = document.documentElement;
+    const key = "plm-find-theme";
+
+    if (!button) return;
+
+    try {
+        if (localStorage.getItem(key) === "dark") {
+            root.classList.add("theme-dark");
+        }
+    } catch (e) {}
+
+    function updateButton() {
+        button.textContent =
+            root.classList.contains("theme-dark")
+                ? "☀ Light Mode"
+                : "☾ Dark Mode";
+    }
+
+    button.addEventListener("click", function () {
+        const dark = root.classList.toggle("theme-dark");
+
+        try {
+            localStorage.setItem(
+                key,
+                dark ? "dark" : "light"
+            );
+        } catch (e) {}
+
+        updateButton();
+    });
+
+    updateButton();
+})();
+</script>
+
 <script src="assets/plm-interactions.js" defer></script>
