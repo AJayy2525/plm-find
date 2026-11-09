@@ -567,7 +567,7 @@ function render_cards(array $items): void {
 
     <link
         rel="stylesheet"
-        href="assets/style.css?v=2"
+        href="assets/style.css?v=4"
     >
 
 </head>
