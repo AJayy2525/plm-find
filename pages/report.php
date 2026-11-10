@@ -6,11 +6,8 @@ $kind = ($_GET['type'] ?? 'lost') === 'found'
     : 'lost';
 ?>
 
-    ? 'found'
-    : 'lost';
-?>
-
 <div class="page-heading">
+
     <div>
         <span class="eyebrow">
             NEW ITEM REPORT
