@@ -521,7 +521,7 @@ unset($_SESSION['notice']);
 
     <link
         rel="stylesheet"
-        href="assets/style.css?v=2"
+        href="assets/style.css?v=5"
     >
 
     <style>
@@ -604,6 +604,84 @@ unset($_SESSION['notice']);
             font-size: 12px;
             color: #75686b;
         }
+        
+        /* =========================================
+        PLM FIND — ADMIN DARK MODE
+        ========================================= */
+
+        html.theme-dark body,
+        html.theme-dark .main-area,
+        html.theme-dark .content {
+            background: #11151c !important;
+            color: #edf2f7 !important;
+        }
+
+        html.theme-dark .sidebar {
+            background: #431923 !important;
+            color: #ffffff !important;
+        }
+
+        html.theme-dark .sidebar .brand,
+        html.theme-dark .nav-links a {
+            color: #f2dfe4 !important;
+        }
+
+        html.theme-dark .nav-links a.active,
+        html.theme-dark .nav-links a:hover {
+            background: #68303d !important;
+            color: #ffffff !important;
+        }
+
+        html.theme-dark .topbar,
+        html.theme-dark .stat-card,
+        html.theme-dark .simple-card {
+            background: #1d2531 !important;
+            color: #edf2f7 !important;
+            border-color: #374253 !important;
+        }
+
+        html.theme-dark .simple-card h3,
+        html.theme-dark .simple-card h4,
+        html.theme-dark .simple-card p,
+        html.theme-dark .simple-form label {
+            color: #edf2f7 !important;
+        }
+
+        html.theme-dark .simple-muted,
+        html.theme-dark .muted {
+            color: #b5c1d0 !important;
+        }
+
+        html.theme-dark .simple-form select,
+        html.theme-dark .simple-form textarea {
+            background: #283241 !important;
+            color: #ffffff !important;
+            border-color: #536174 !important;
+        }
+
+        html.theme-dark .simple-card img {
+            background: #283241 !important;
+        }
+
+        html.theme-dark .simple-status {
+            background: #354052 !important;
+            color: #edf2f7 !important;
+        }
+
+        html.theme-dark .simple-status.done {
+            background: #1d523b !important;
+            color: #b4f3d2 !important;
+        }
+
+        html.theme-dark .stat-card span,
+        html.theme-dark .stat-card small {
+            color: #b5c1d0 !important;
+        }
+
+        html.theme-dark .app-footer {
+            color: #aab6c7 !important;
+        }
+
 
 
     </style>
